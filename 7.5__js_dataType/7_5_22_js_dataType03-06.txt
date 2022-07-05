@@ -1,5 +1,5 @@
  Javascript Step01_dataType3.html
-            ~ Step06_dataType3.html
+            ~ Step01_dataType6.html
 
 복습
 
@@ -64,4 +64,5 @@
         let d = {num:1};
     
     
-        
+    function type
+        엘리베이터에서 뭄닫기 버튼을 누른다 -> 문을 닫는 함수 호출 -> 문이 닫힘.
