@@ -66,3 +66,36 @@
     
     function type
         엘리베이터에서 뭄닫기 버튼을 누른다 -> 문을 닫는 함수 호출 -> 문이 닫힘.
+
+
+    Figuring out data type
+
+    document.querySelectorAll("h1")[0].innerText
+
+    document <- object type
+        document.quertSelectorAll <- function type
+            document.querySelectorAll("h1") <- array type
+                document.querySelectorAll("h1")[0] <-object type
+                    document.querySelectorAll("h1")[0].innerText ="eh?";
+                                                                  수정가능
+    
+    alert(X)
+    console.log(X)
+    let names=[];
+    names.push(X)
+    names.splice(2,1)
+
+
+    1+1
+    2
+        산술연산
+
+    "두부"+1
+    '두부1'
+        연결연산
+
+    *매개변수*
+    printMsg 이용
+    이름 입력하면
+    안녕하세요 "이름"님 만들어보기
+    PrintSum 이용 계산기 만들기
