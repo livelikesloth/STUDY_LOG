@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_example3.html</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <button onclick="plus()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="multiple()">*</button>
+    <button onclick="divide()">/</button>
+    <input type="text"  id="num2">
+    =
+    <span id="result"></span>
+    <br>
+    <button onclick="clearAll()">Clear</button>
+            <!-- 
+                이상 문서 객체들(document objects) 전부 heap area에 저장된다.
+                안의 js를 원하는 시점에 실행하고 싶다면 key값을 알아야 한다.
+                그 키값을 조절할 수 있도록 도와주는 개체가 document
+            -->
+
+    <script>
+        
+        
+        function plus(){
+            //입력한 값을 읽어온다
+            let a=document.querySelector("#num1").value;
+            let b=document.querySelector("#num2").value;
+            //연산의 값을 얻어낸다
+            let result=Number(a)+Number(b)
+            // 종종 문자열 값을 숫자로 바꿔줄 필요가 있다
+            document.querySelector("#result").innerText=result;
+            //span 요소의 innerText로 출력하기  
+        }
+        function minus(){
+            let a=document.querySelector("#num1").value;
+            let b=document.querySelector("#num2").value;
+            let result=Number(a)-Number(b)
+            document.querySelector("#result").innerText=result;
+                /*
+                    #num1의 값을 구한다
+                    #num2의 값을 구한다
+                    둘을 더한다.
+                    출력한다.   
+                */
+        } 
+        function multiple(){
+            let a=document.querySelector("#num1").value;
+            let b=document.querySelector("#num2").value;
+            let result=Number(a) * Number(b)
+            document.querySelector("#result").innerText=result;
+        } 
+        function divide(){
+            let a=document.querySelector("#num1").value;
+            let b=document.querySelector("#num2").value;
+            let result=Number(a)/Number(b)
+            document.querySelector("#result").innerText=result;
+        } 
+        function clearAll(){
+            document.querySelector("#num1").value='';
+            document.querySelector("#num2").value='';
+            document.querySelector("#result").innerText='';
+            
+
+        }
+
+    </script>
+  
+    
+</body>
+</html>
